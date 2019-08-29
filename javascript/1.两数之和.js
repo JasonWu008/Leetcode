@@ -10,18 +10,14 @@
  */
 var twoSum = function(nums, target) {
     var obj = {};
-    for(var i = 0;i < nums.length;i++){
+    for(var i = 0; i < nums.length; i++){
         var temp = target - nums[i];
-        if(obj[temp]!=null){
-            var results = [];   
-            results.push(obj[temp]);
-            results.push(i);
+        if(obj[temp] != null){
+            var results = new Array(obj[temp],i);   
             return results;
-        }
-        else{
+        }else{
             obj[nums[i]] = i;
         }
     }
-    
 };
 

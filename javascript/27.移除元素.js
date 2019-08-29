@@ -19,6 +19,5 @@ var removeElement = function(nums, val) {
         j++;
     }
     return i;
-    
 };
 
